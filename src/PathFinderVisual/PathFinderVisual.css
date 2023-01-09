@@ -1,0 +1,33 @@
+.grid {
+    margin: 50px 0 0;
+}
+
+#dButton {
+    display: block;
+    clear: both;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: larger;
+    margin: auto;
+}
+
+#reset {
+    clear: both;
+    background-color: white;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.position {
+    display: block;
+    margin: auto;
+}
+
+label {
+    font-weight: 300;
+}
