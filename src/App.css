@@ -1,10 +1,20 @@
+@font-face {
+  font-family: 'Above';
+  src: url(/public/fonts/above.ttf);
+}
+
 .App {
-  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  font-family: 'Above', 'Baskerville', "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
   text-align: center;
   overflow: hidden;
 }
 
+#tutorialText {
+  border: 1px solid black;
+}
+
 #tutorial {
-  transform: scale(1.3);
   padding: 1%;
+  padding-top: 30px;
+  font-weight: 300;
 }

@@ -77,13 +77,14 @@ export default class PathfindingVisualizer extends Component {
     const {grid, mouseIsPressed} = this.state;
 
     return (
-      <>
+      <><div id="buttons">
         <button id="dButton" onClick={() => this.visualizeDijkstra()}>
           Dijkstra's Algorithm
         </button>
         <button id="reset" onClick={refresh}>
           Reset
         </button>
+        </div>
         {/* <div>
           <label for="start">Start</label>
           <input class="position" id="start"></input>

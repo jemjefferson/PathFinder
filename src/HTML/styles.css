@@ -1,7 +1,10 @@
 #header {
-    background-color: black;
+    background-image: url(/public/images/header.jpg);
+    text-align: center;
+    transform: scale(1.3);
 }
 
 h1 {
     color: white;
+    padding: 1%;
 }
