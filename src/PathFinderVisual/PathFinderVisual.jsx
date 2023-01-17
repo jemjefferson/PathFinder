@@ -161,12 +161,12 @@ const getNewGridWithWallToggled = (grid, row, col) => {
   return newGrid;
 };
 
-function updateStartNode () {
-  console.log(START_NODE_COL, START_NODE_ROW);
-  START_NODE_COL = document.getElementById("sColumn").value;
-  START_NODE_ROW = document.getElementById("sRow").value;
-  console.log(START_NODE_COL, START_NODE_ROW);
-};
+// function updateStartNode () {
+//   console.log(START_NODE_COL, START_NODE_ROW);
+//   START_NODE_COL = document.getElementById("sColumn").value;
+//   START_NODE_ROW = document.getElementById("sRow").value;
+//   console.log(START_NODE_COL, START_NODE_ROW);
+// };
 
 function refresh (){
   window.location.reload();
