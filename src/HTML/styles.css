@@ -25,9 +25,12 @@ h1 {
 }
 
 h4 {
+  position: relative;
   font-family: 'Beach';
   color: white;
-  text-align: right;
+  transform: scale(1.7);
+  width: 10px;
+  padding: 1%;
 }
 
 #tutorialBtn {
@@ -60,7 +63,7 @@ h4:hover {
   #tutorial {
     padding: 1%;
     padding-top: 30px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
 #tutorialBtn:hover {
