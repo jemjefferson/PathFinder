@@ -4,8 +4,8 @@ import {dijkstra, getNodesInShortestPathOrder} from '../Algorithms/dijkstra';
 
 import './PathFinderVisual.css';
 
-const START_NODE_ROW = 10;
-const START_NODE_COL = 6;
+let START_NODE_ROW = 10;
+let START_NODE_COL = 6;
 const FINISH_NODE_ROW = 10;
 const FINISH_NODE_COL = 44;
 
@@ -14,7 +14,7 @@ export default class PathfindingVisualizer extends Component {
     super();
     this.state = {
       grid: [],
-      mouseIsPressed: false,
+      mouseIsPressed: false
     };
   }
 
@@ -79,17 +79,20 @@ export default class PathfindingVisualizer extends Component {
     return (
       <><div id="buttons">
         <button id="dButton" onClick={() => this.visualizeDijkstra()}>
-          Dijkstra's Algorithm
+          Visualize
         </button>
         <button id="reset" onClick={refresh}>
           Reset
         </button>
         </div>
-        {/* <div>
-          <label for="start">Start</label>
-          <input class="position" id="start"></input>
-          <label for="end">End</label>
-          <input class="position" id="end"></input>
+        {/* <div id="sNode">
+        <form>
+        <label> Starting Node:
+          <input type="number" name="sColumn" id="sColumn" placeholder='Column'/>
+          <input type="number" name="sRow" id="sRow" placeholder='Row' />
+        </label>
+        <button type="button" onClick={updateStartNode}>Submit</button>
+      </form>
         </div> */}
         <div className="grid">
           {grid.map((row, rowIdx) => {
@@ -156,6 +159,13 @@ const getNewGridWithWallToggled = (grid, row, col) => {
   };
   newGrid[row][col] = newNode;
   return newGrid;
+};
+
+function updateStartNode () {
+  console.log(START_NODE_COL, START_NODE_ROW);
+  START_NODE_COL = document.getElementById("sColumn").value;
+  START_NODE_ROW = document.getElementById("sRow").value;
+  console.log(START_NODE_COL, START_NODE_ROW);
 };
 
 function refresh (){

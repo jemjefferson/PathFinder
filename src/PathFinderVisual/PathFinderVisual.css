@@ -1,7 +1,12 @@
 .grid {
-    margin-top: 10px;
     transform: scale(0.8);
 }
+
+@media screen and (max-width: 900px) {
+    .grid {
+      display: none;
+    }
+  }
 
 #buttons {
     padding-top: 30px;
@@ -28,6 +33,17 @@
     margin-top: 20px;
 }
 
+#dButton, #reset {
+    font-weight: 700;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
+}
+
+#reset:hover, #dButton:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
 .position {
     display: block;
     margin: auto;
@@ -35,4 +51,12 @@
 
 label {
     font-weight: 300;
+}
+
+input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#sNode {
+    width: 50%;
 }

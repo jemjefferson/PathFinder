@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Above';
+  src: url(/public/fonts/above.ttf);
+}
+
+* {
+  font-family: 'Above', 'Baskerville', "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+
 #header {
     background-color: black;
     text-align: center;
@@ -6,7 +15,8 @@
 h1 {
     color: white;
     padding: 1%;
-    text-align: left;
+    text-align: center;
+    transform: scale(1.8);
 }
 
 h4 {
@@ -20,7 +30,9 @@ h4 {
     font-weight: 700;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
-    transform: scale(1.3);
+    transform: scale(1.6);
+    width: 15%;
+    margin-bottom: 10px;
   }
 
 h4:hover {
@@ -29,8 +41,12 @@ h4:hover {
 }
 
 #tutorialText {
-  display: none;
+    display: none;
+    margin: auto;
+    margin-top: 20px;
     border: 1px solid black;
+    width: 50%;
+    font-weight: 500;
   }
   
   #tutorial {
@@ -41,6 +57,15 @@ h4:hover {
 
 #tutorialBtn:hover {
   background-color: lightgray;
+  cursor: pointer;
+}
+
+#tutorialBtn:active {
+  background-color: gray;
+}
+
+h4:active {
+  color: gray;
 }
 
 #logos {
