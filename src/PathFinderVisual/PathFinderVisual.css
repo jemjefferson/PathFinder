@@ -17,7 +17,7 @@
     clear: both;
     width: 200px;
     height: 50px;
-    background-color: white;
+    background-color: #D7EDE2;
     text-align: center;
     cursor: pointer;
     font-size: larger;
@@ -26,7 +26,7 @@
 
 #reset {
     clear: both;
-    background-color: white;
+    background-color: #F4F4F4;
     cursor: pointer;
     width: 150px;
     height: 30px;
@@ -39,9 +39,14 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
 }
 
-#reset:hover, #dButton:hover {
-    background-color: lightgray;
+#reset:hover {
+    background-color: #E5E5E5;
     cursor: pointer;
+  }
+
+  #dButton:hover {
+    cursor: pointer;
+    background-color: #c5e5d5;
   }
 
 .position {
