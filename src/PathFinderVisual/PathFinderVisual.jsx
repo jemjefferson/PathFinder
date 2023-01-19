@@ -84,6 +84,20 @@ export default class PathfindingVisualizer extends Component {
         <button id="reset" onClick={refresh}>
           Reset
         </button>
+        <div id="guide">
+          <div class="guideItem">
+            <h3>Start<div class="square" id="start"></div></h3>
+          </div>
+            <div class="guideItem">
+          <h3>Wall<div class="square" id="wall"></div></h3>
+          </div>
+          <div class="guideItem">
+            <h3>Path<div class="square" id="path"></div></h3>
+          </div>
+          <div class="guideItem">
+            <h3>End<div class="square" id="end"></div></h3>
+          </div>
+        </div>
         </div>
         {/* <div id="sNode">
         <form>
