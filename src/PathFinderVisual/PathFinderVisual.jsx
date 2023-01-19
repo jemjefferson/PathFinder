@@ -113,7 +113,7 @@ export default class PathfindingVisualizer extends Component {
           <input type="number" name="sColumn" id="sColumn" placeholder='Column'/>
           <input type="number" name="sRow" id="sRow" placeholder='Row' />
         </label>
-        <button type="button" onClick={updateStartNode}>Submit</button>
+        <button type="button">Submit</button>
       </form>
         </div> */}
         <div className="grid">
